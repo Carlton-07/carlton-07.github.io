@@ -1,0 +1,311 @@
+@import "config";
+@import "utilities";
+
+
+
+//General Styles
+* {
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Dosis', sans-serif;
+  line-height:1.6;
+  background: white;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul {
+  list-style: none;
+}
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+img{
+  width: 100%;
+}
+//Logo
+#logo {
+  width:150px;
+  height: 200px;
+  color:white;
+  text-transform: uppercase;
+}
+
+//Main Nav
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  ul {
+    display: flex;
+  }
+
+  li{
+    padding: 1rem 1.5rem;
+  }
+
+  a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+  
+
+    &:hover {
+      border-color: $medium-color;
+    }
+
+    &.current {
+      border-color:$main-color;
+    }
+  }
+}
+
+//Header
+#header {
+  //Header Home
+  &-home{
+    background: $bg-image no-repeat center right /cover;
+    height: 100vh;
+    color: white;
+
+    //Header Content
+    .header-content {
+      text-align: center;
+
+      h1{
+        font-size: 4rem;
+        line-height: 1.2;
+      }
+    }
+
+  }
+  &-inner{
+    background: $bg-image  20% 30% /cover;
+    height: 5.5rem;
+    border-bottom: 3px solid $main-color;
+
+  }
+}
+
+//Home Sections
+#home {
+  &-a {
+    .specials {
+      margin-top: 3rem;
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(4, 1fr);
+      text-align: left;
+
+      .fas {
+        color: $main-color;
+        padding-bottom: 0.4rem;
+        
+      }         
+    }
+  }
+}
+
+
+
+// About Sections
+#about {
+// About A
+&-a {
+  .about-info {
+    display: grid;
+    grid-template-areas:
+      'bioimage bio bio'
+      'aw1 aw2 aw3';
+    grid-gap: 1.2rem;
+  }
+
+  // Grid Area
+  .bio-image {
+    grid-area: bioimage;
+  }
+
+  .bio {
+    grid-area: bio;
+    border-left: 3px solid $main-color;
+    padding: 0.8rem;
+  }
+
+}
+// About B
+&-b {
+  .progress {
+    overflow: hidden;
+    height: 20px;
+    background: $medium-color;
+    border-radius: 5px;
+    margin-bottom: 0.6rem;
+    
+
+    div {
+      height: 100%;
+      color: #fff;
+      text-align: center;
+      background: $main-color;
+    }
+  }
+}
+
+
+}
+//Work Page
+#work {
+  &-a{
+    .tab-titles{
+      display: flex;
+      margin: 20px 0 40px;
+    }
+    .tab-links{
+      margin-right: 50px ;
+      font-size: 18px;
+      font-weight: 500;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .tab-links::after{
+      content: '';
+      width: 0;
+      height: 3px;
+      background: $main-color;
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      transition: 0.5s;
+    }
+
+    .tab-links.active-link::after{
+      width: 50%;
+    }
+    
+    .tab-contents ul li{
+      list-style: none;
+      margin: 10px 0;
+      font-size: 18px;
+    }
+    .tab-contents ul li span{
+      color: #ffbc00;
+      font-size: 16px;
+    }
+    .tab-contents{
+      display: none;
+    }
+    .tab-contents.active-tab{
+      display: block;
+      text-align: left;
+    }
+  
+  }
+}
+
+// Contact Page
+#contact {
+&-a {
+  .text-fields {
+    display: grid;
+    grid-template-areas:
+      'name email'
+      'subject phone'
+      'message message';
+    grid-gap: 1.2rem;
+    margin-bottom: 1.2rem;
+
+    // Grid Areas
+    .name-input {
+      grid-area: name;
+    }
+    .subject-input {
+      grid-area: subject;
+    }
+    .email-input {
+      grid-area: email;
+    }
+    .phone-input {
+      grid-area: phone;
+    }
+    .message-input {
+      grid-area: message;
+      height: 100px;
+    }
+
+    .text-input {
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  button[type='submit'] {
+    width: 50%;
+  }
+  #msg{
+    color:#ffbc00;
+    margin-top: 10px;
+    display: block;
+  }
+}
+
+&-c {
+  h3 {
+    text-align: center;
+    font-size: 4rem;
+    background-color: #ffbc00;
+  }
+}
+}
+
+// Footer
+#main-footer {
+background: $dark-color;
+color: #fff;
+height: 5rem;
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+
+  .social .fab {
+    margin-right: 1rem;
+    border: 2px #fff solid;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 0.5rem;
+
+    &:hover {
+      background: $main-color;
+    }
+  }
+  & a{
+    color: inherit;
+  }
+}
+
+}
+
+
+// Import Media Queries
+@import 'media';
