@@ -10,7 +10,7 @@
 // Smartphones
 @media (max-width: 500px) {
   #main-nav {
-    flex-direction: column;
+    display: flow-root;
     align-items: center;
 
     li {
@@ -21,7 +21,7 @@
 
   #header {
     &-home {
-      height: 10rem;
+      height: 18rem;
       border-bottom: 3px solid $main-color;
       background-position: 20% 30%;
 
