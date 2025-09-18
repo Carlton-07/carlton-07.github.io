@@ -16,15 +16,16 @@
       <nav id="main-nav">
       <img src="img/logo.png" alt="My Portfolio" id="logo">
       <ul>
-        <li><a href="#header">Home</a></li>
+        <li><a href="#header-home">Home</a></li>
         <li><a href="#about-a">About</a></li>
         <li><a href="#work-a">Work</a></li>
+        <li><a href="#projects-a">Projects</a></li>
         <li><a href="#contact-a">Contact</a></li>
       </ul>
     </nav>
       <div class="header-content">
         <h1>
-           Hi, I am Carlton Gnanamalai
+           Hi, I am Carlton Gnanamalai    
            </h1>
            <h1>
            And I am a
@@ -100,64 +101,189 @@
     </div>
   </section>
 
-  <!-- Section A: Work-->
-  <section id="work-a" class="text-center py-3">
-    <div class="container">
-      <h2 class="section-title">WORK EXPERIENCE</h2>
-      <div class="bottom-line"></div>
-      <div class = "work-item"></div>
-        
+ <!-- Section A: Work-->
+<section id="work-a" class="text-center py-3">
+  <div class="container">
+    <h2 class="section-title">WORK EXPERIENCE</h2>
+    <div class="bottom-line"></div>
+    <div class="work-item"></div>
+      
+    <div class="tab-titles">
+      <p class="tab-links" onclick="opentab('govontario')">Government of Ontario</p>
+      <p class="tab-links" onclick="opentab('tweeba')">Tweeba</p>
+      <p class="tab-links active-link" onclick="opentab('maji curry')">Maji Curry</p>
+      <p class="tab-links" onclick="opentab('tmu ux')">TMU UX</p>
+      <p class="tab-links" onclick="opentab('mantra solutions')">Mantra Solutions</p>
+     
+    </div>  
 
-      <div class="tab-titles">
-        <p class="tab-links active-link" onclick="opentab('maji curry')">Maji Curry</p>
-        <p class="tab-links" onclick="opentab('tmu ux')">TMU UX</p>
-        <p class="tab-links" onclick="opentab('mantra solutions')">Mantra Solutions</p>
-      </div>  
-      <div class="tab-contents active-tab" id="maji curry">
-        <ul>
-          <li><h3> Chef</h3></li>
-          <li><span>August 2023 - Present</span><br>•	Successfully managing a high-volume kitchen, preparing an average of 200 Japanese cuisine meals daily while maintaining the highest standards of quality and presentation.
-           <br> •	Reduced kitchen waste by 15% through improved inventory management techniques
-            <br>•	Working effectively in a fast-paced, high-pressure environment, maintaining a positive attitude and teamwork.  
-            <br>•	Developed strong time-management skills to handle multiple tasks simultaneously.
-            </li>
-        </ul>
+    <!-- Government of Ontario -->
+    <div class="tab-contents" id="govontario">
+      <ul>
+        <li><h3> Security Analyst (Co-op)</h3></li>
+        <li><span>September 2024 - August 2025</span><br>
+          • Administered access for 250+ employees across Oracle ITCS Cloud and IFIS, ensuring IAM compliance.<br>
+          • Resolved 150+ access requests and incidents via BMC Remedy, cutting backlog by 30%.<br>
+          • Partnered with cross-functional teams to mitigate risks and strengthen identity lifecycle controls.
+        </li>
+      </ul>
+      
+    </div>
+
+     <!-- Tweeba -->
+    <div class="tab-contents" id="tweeba">
+      <ul>
+        <li><h3> Application Developer</h3></li>
+        <li><span>May 2024 - August 2024</span><br>
+          • Built and debugged end-to-end solutions for Tweeba App using Vue.js, JavaScript, and Figma.<br>
+          • Reduced front-end bugs by 45% through unit and integration testing.<br>
+          • Improved cross-team velocity by managing sprints, stand-ups, and retrospectives in Jira.<br>
+          • Collaborated on version control and feature branches using Bitbucket.
+        </li>
+      </ul>
+      
+    </div>
+
+    <!-- Maji Curry -->
+    <div class="tab-contents active-tab" id="maji curry">
+      <ul>
+        <li><h3> Chef</h3></li>
+        <li><span>August 2023 - June 2025</span><br>
+          • Managed a high-volume kitchen, preparing 200+ Japanese meals daily with consistent quality and presentation.<br>
+          • Reduced food waste by 15% through optimized inventory and portion control.<br>
+          • Thrived in a fast-paced, high-pressure environment by maintaining strong teamwork and communication.<br>
+          • Developed advanced time-management skills to balance multiple orders and prep tasks simultaneously.
+        </li>
+      </ul>
+      
+    </div>
+
+    <!-- TMU UX -->
+    <div class="tab-contents" id="tmu ux">
+      <ul>
+        <li><h3> Logistics Associate</h3></li>
+        <li><span>April 2022 - April 2023</span><br>
+          • Supported VP of Logistics in event planning, procurement, and distribution of materials.<br>
+          • Maintained accurate records of events, including attendance, feedback, and resource allocation.<br>
+          • Streamlined reporting processes by standardizing event feedback and participant data analysis.<br>
+          • Collaborated with cross-functional teams to ensure smooth execution of large-scale student events.
+        </li>
+      </ul>
+      
+    </div>
+
+    <!-- Mantra Solutions -->
+    <div class="tab-contents" id="mantra solutions">
+      <ul>
+        <li><h3> Web Development Intern</h3></li>
+        <li><span>April 2022 - August 2022</span><br>
+          • Developed a responsive website that increased client traffic by 20%.<br>
+          • Built and optimized interactive pages using HTML, CSS, and Node.js to enhance customer experience.<br>
+          • Collaborated with the design team to align UI/UX with client requirements.<br>
+          • Delivered fully tested features on time in an Agile development environment.
+        </li>
+      </ul>
+      
+    </div>
+
+   
+
+   
+  </div>
+</section>
+      <!-- Section A: Projects -->
+<section id="projects-a" class="text-center py-3">
+  <div class="container">
+    <h2 class="section-title">Some Things I have Built</h2>
+    <div class="bottom-line"></div>
+    <p class="lead">A few projects I'm proud of. Click for code & live demos.</p>
+
+    <div class="projects">
+      <!-- Project 1 -->
+      <div class="project">
+        <div class="project-img">
+            <img src="/img/spotify_ss.jpg" alt="YtoS project screenshot" loading="lazy">
+          </a>
+        </div>
+        <div class="project-info">
+          <h3>YtoS — YouTube ➜ Spotify</h3>
+          <p>Python script app that fetches your liked YouTube music videos and creates a synced Spotify playlist. Handles OAuth, duplicate detection, API rate limits, and mapping metadata.</p>
+          <ul>
+            <li>Next.js</li><li>Node.js</li><li>Spotify API</li><li>Google OAuth</li><li>TailwindCSS</li>
+          </ul>
+          <a class="btn-dark" href="https://github.com/carlton-07/yt-to-spotify" target="_blank" rel="noopener">Code</a>
+          
+        </div>
       </div>
-      <div class="tab-contents" id="tmu ux">
-        <ul>
-          <li><h3> Logistics Associate</h3></li>
-          <li><span>April 2022 - Present</span><br>•	Providing essential support to the VP of Logistics and Events, assisting with event materials procurement, distribution, and inventory management.
-          <br>•	Playing a key role in maintaining organized records of event engagements, managing feedback forms, and tracking participant attendance and feedback for analysis and reporting purposes. 
-</li>
-        </ul>
+
+      <!-- Project 2 -->
+      <div class="project">
+        <div class="project-img">
+          <a href="https://kebikacurry.com/" target="_blank" rel="noopener">
+            <img src="img/kebika_screenshot.png" alt="Kebika Curry booking system screenshot" loading="lazy">
+          </a>
+        </div>
+        <div class="project-info">
+          <h3>Kebika Curry Restaurant Website</h3>
+          <p>Full-stack restaurant website with an admin dashboard and an integrated booking system using Next.js and Firebase. Implemented responsive UI and real-time database updates, booking confirmations, and safeguards for double bookings.</p>
+          <ul>
+            <li>Next.js</li><li>Firebase</li><li>React Hook Form</li><li>TailwindCSS</li>
+          </ul>
+          <a class="btn-dark" href="https://github.com/Carlton-07/KebikaCurry" target="_blank" rel="noopener">Code</a>
+          <a class="btn-main" href="https://kebikacurry.com/" target="_blank" rel="noopener">Live Demo</a>
+        </div>
       </div>
-      <div class="tab-contents" id="mantra solutions">
-        <ul>
-          <li><h3> Web Development Intern</h3></li>
-          <li><span>April 2022 - August 2022</span><br>• Developed a custom, responsive website for a Mantra Solutions client which resulted in an increase of 20% overall customer traffic.
-            <br>• Implemented innovative websites utilizing HTML, CSS, and Node.js to optimize customer interactions online</li>
-        </ul>
+
+      <!-- Project 3 -->
+      <div class="project">
+        <div class="project-img">
+            <img src="img/brs_screenshot.png" alt="Bug report System screenshot" loading="lazy">
+          </a>
+        </div>
+        <div class="project-info">
+          <h3>Bug Report System</h3>
+            <p>A reporting tool that allows users to log, track, and manage bugs. Includes a form-based interface, database integration, and an admin panel for resolving issues efficiently.</p>
+            <ul>
+            <li>EJS</li><li>JavaScript</li><li>CSS</li><li>MongoDB</li>
+          </ul>
+          <a class="btn-dark" href="https://github.com/Carlton-07/BRS" target="_blank" rel="noopener">Code</a>
+          <a class="btn-main" href="https://www.youtube.com/watch?v=ICYDTqbJg3U&ab_channel=AyushHirani" target="_blank" rel="noopener">Live Demo</a>
+        </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
    <!-- Section A: Contact Form --> 
-   <section id="contact-a" class="text-center py-3">
-    <div class="container">
-      <h2 class="section-title">Contact Me</h2>
-      <div class="bottom-line"></div>
-        <p class="lead">Here is how you can reach me</p>
-        <form name ='contact-form'>
-          <div class="text-fields">
-            <input type="text" class="text-input name-input" placeholder="Name" name="Name" >
-            <input type="text" class="text-input subject-input" placeholder="Subject" name="Subject">
-            <input type="email" class="text-input email-input" placeholder="Email Address" name="Email Address">
-            <input type="text" class="text-input phone-input" placeholder="Phone Number" name="Phone Number">
-            <textarea class="text-input message-input" placeholder="Enter Message" name="Message"></textarea>
-          </div>
-          <button type="submit" class="btn-dark">Submit</button> 
-        </form>
-        <span id="msg"></span>
+    <section id="contact-a" class="text-center py-3">
+  <div class="container">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="bottom-line"></div>
+    <p class="lead">Here is how you can reach me</p>
+
+    <!-- Direct POST to Apps Script via hidden iframe -->
+    <form id="contact-form"
+          name="contact-form"
+          action="https://script.google.com/macros/s/AKfycbwIZBQd1kuXU5sbYi3_Ihdv4dmtN4sW8GfnHSLa44obIgeBymXh6xBKriGbwunSO3Jd/exec"
+          method="POST"
+          target="hidden_iframe">
+      <div class="text-fields">
+        <input type="text"  class="text-input name-input"    placeholder="Name"          name="Name" required>
+        <input type="text"  class="text-input subject-input" placeholder="Subject"       name="Subject">
+        <input type="email" class="text-input email-input"   placeholder="Email Address" name="Email Address" required>
+        <input type="text"  class="text-input phone-input"   placeholder="Phone Number"  name="Phone Number">
+        <textarea class="text-input message-input"           placeholder="Enter Message"  name="Message" required></textarea>
       </div>
-  </section>
+      <button type="submit" class="btn-dark">Submit</button>
+    </form>
+
+    <!-- Status message -->
+    <span id="msg" style="margin-left:.5rem;"></span>
+
+    <!-- Hidden iframe to receive the response (prevents navigation) -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+  </div>
+</section>
+
 
   <!--Section C: Tagline-->
   <section id="contact-c" class="bg-main py-1">
@@ -186,31 +312,33 @@
       for(tablink of tablinks){
         tablink.classList.remove("active-link");
       }
-      for(tabcontent of tabcontents){
+      for(tabcontent of tabcontents){ 
         tabcontent.classList.remove("active-tab");
       
       }
       event.currentTarget.classList.add("active-link");
       document.getElementById(tabname).classList.add("active-tab")
     }
-  </script>
-  <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwIZBQd1kuXU5sbYi3_Ihdv4dmtN4sW8GfnHSLa44obIgeBymXh6xBKriGbwunSO3Jd/exec'  
-  const form = document.forms['contact-form']
-  const msg = document.getElementById('msg')
+  (function(){
+    const form = document.getElementById('contact-form');
+    const msg  = document.getElementById('msg');
+    const iframe = document.getElementById('hidden_iframe');
+    let submitted = false;
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML = "Message sent successfully"
-        setTimeout(function(){
-          msg.innerHTML =""
-        },500000)
-        form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
+    form.addEventListener('submit', function(){
+      submitted = true;
+      msg.textContent = 'Sending…';
+    });
+
+    iframe.addEventListener('load', function(){
+      if (!submitted) return; // ignore iframe's initial load
+      submitted = false;
+      msg.textContent = 'Message sent ✅';
+      form.reset();
+      setTimeout(() => { msg.textContent = ''; }, 3000);
+    });
+  })();
 </script>
+
 </body>
 </html>
